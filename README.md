@@ -16,3 +16,7 @@ cp -r tmp/sonic-buildimage/src/sonic-yang-models/yang-models .
 rm -rf tmp
 ```
 The ietf module dependencies are manually put here
+
+## genrating a naked yaml from a yang model
+
+gnmic generate --file yang-models --dir ietf --path / > sonic.yaml

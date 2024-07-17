@@ -1,0 +1,1965 @@
+get-match-protocols: {}
+sonic-acl:
+  ACL_RULE:
+    ACL_RULE_LIST:
+    - ACL_TABLE_NAME: ""
+      AETH_SYNDROME: ""
+      BTH_OPCODE: ""
+      DEI: ""
+      DSCP: ""
+      ETHER_TYPE: ""
+      IN_PORTS: ""
+      INNER_ETHER_TYPE: ""
+      INNER_IP_PROTOCOL: ""
+      INNER_L4_DST_PORT: ""
+      INNER_L4_SRC_PORT: ""
+      IP_PROTOCOL: ""
+      IP_TYPE: ""
+      MIRROR_EGRESS_ACTION: ""
+      MIRROR_INGRESS_ACTION: ""
+      OUT_PORTS: ""
+      PACKET_ACTION: ""
+      PCP: ""
+      PRIORITY: ""
+      RULE_NAME: ""
+      TC: ""
+      TCP_FLAGS: ""
+      VLAN_ID: ""
+      icmp4: ""
+      icmp6: ""
+      ip4_prefix: ""
+      ip6_prefix: ""
+      l2_src_dst_address: ""
+      l4_dst_port: ""
+      l4_dst_port_range: ""
+      l4_src_port: ""
+      l4_src_port_range: ""
+  ACL_TABLE:
+    ACL_TABLE_LIST:
+    - ACL_TABLE_NAME: ""
+      policy_desc: ""
+      ports:
+      - ""
+      services: []
+      stage: INGRESS
+      type: ""
+  ACL_TABLE_TYPE:
+    ACL_TABLE_TYPE_LIST:
+    - ACL_TABLE_TYPE_NAME: ""
+      ACTIONS:
+      - ""
+      BIND_POINTS: []
+      MATCHES: []
+sonic-auto_techsupport:
+  AUTO_TECHSUPPORT:
+    GLOBAL:
+      available_mem_threshold: "10.0"
+      max_core_limit: ""
+      max_techsupport_limit: ""
+      min_available_mem: "200"
+      rate_limit_interval: ""
+      since: ""
+      state: ""
+  AUTO_TECHSUPPORT_FEATURE:
+    AUTO_TECHSUPPORT_FEATURE_LIST:
+    - available_mem_threshold: "10.0"
+      feature_name: ""
+      rate_limit_interval: ""
+      state: ""
+sonic-banner:
+  BANNER_MESSAGE:
+    global:
+      login: Debian GNU/Linux 11
+      logout: ""
+      motd: |
+        You are on
+         ____   ___  _   _ _  ____
+        / ___| / _ \| \ | (_)/ ___|
+        \___ \| | | |  \| | | |
+         ___) | |_| | |\  | | |___
+        |____/ \___/|_| \_|_|\____|
+        -- Software for Open Networking in the Cloud --
+        Unauthorized access and/or use are prohibited.
+        All access and/or use are subject to monitoring.
+        Help:    https://sonic-net.github.io/SONiC/
+      state: disabled
+sonic-bgp-allowed-prefix:
+  BGP_ALLOWED_PREFIXES:
+    BGP_ALLOWED_PREFIXES_COM_LIST:
+    - community: ""
+      default_action: ""
+      deployment: ""
+      id: ""
+      prefixes_v4: []
+      prefixes_v6: []
+    BGP_ALLOWED_PREFIXES_LIST:
+    - default_action: ""
+      deployment: ""
+      id: ""
+      prefixes_v4: []
+      prefixes_v6: []
+sonic-bgp-bbr:
+  BGP_BBR:
+    all:
+      status: enabled
+sonic-bgp-device-global:
+  BGP_DEVICE_GLOBAL:
+    STATE:
+      idf_isolation_state: unisolated
+      tsa_enabled: "false"
+      wcmp_enabled: "false"
+sonic-bgp-global:
+  BGP_GLOBALS:
+    BGP_GLOBALS_LIST:
+    - always_compare_med: ""
+      as_path_mp_as_set: ""
+      coalesce_time: ""
+      compare_confed_as_path: ""
+      confed_id: ""
+      confed_peers: []
+      default_ipv4_unicast: ""
+      default_local_preference: ""
+      default_show_hostname: ""
+      default_shutdown: ""
+      default_subgroup_pkt_queue_max: ""
+      deterministic_med: ""
+      disable_ebgp_connected_rt_check: ""
+      establish_wait: ""
+      external_compare_router_id: ""
+      fast_external_failover: ""
+      gr_preserve_fw_state: ""
+      gr_restart_time: ""
+      gr_stale_routes_time: ""
+      graceful_restart_enable: ""
+      graceful_shutdown: ""
+      holdtime: ""
+      ignore_as_path_length: ""
+      keepalive: ""
+      load_balance_mp_relax: ""
+      local_asn: ""
+      log_nbr_state_changes: ""
+      max_delay: ""
+      max_dynamic_neighbors: ""
+      max_med_admin: ""
+      max_med_admin_val: ""
+      max_med_time: ""
+      max_med_val: ""
+      med_confed: ""
+      med_missing_as_worst: ""
+      network_import_check: ""
+      read_quanta: ""
+      route_map_process_delay: ""
+      router_id: ""
+      rr_allow_out_policy: ""
+      rr_clnt_to_clnt_reflection: ""
+      rr_cluster_id: ""
+      vrf_name: ""
+      write_quanta: ""
+  BGP_GLOBALS_AF:
+    BGP_GLOBALS_AF_LIST:
+    - afi_safi: ""
+      ebgp_route_distance: ""
+      ibgp_equal_cluster_length: ""
+      ibgp_route_distance: ""
+      import_vrf: ""
+      import_vrf_route_map: ""
+      local_route_distance: ""
+      max_ebgp_paths: "1"
+      max_ibgp_paths: "1"
+      route_download_filter: ""
+      route_flap_dampen: ""
+      route_flap_dampen_half_life: ""
+      route_flap_dampen_max_suppress: ""
+      route_flap_dampen_reuse_threshold: ""
+      route_flap_dampen_suppress_threshold: ""
+      vrf_name: ""
+  BGP_GLOBALS_AF_AGGREGATE_ADDR:
+    BGP_GLOBALS_AF_AGGREGATE_ADDR_LIST:
+    - afi_safi: ""
+      as_set: ""
+      ip_prefix: ""
+      policy: ""
+      summary_only: ""
+      vrf_name: ""
+  BGP_GLOBALS_AF_NETWORK:
+    BGP_GLOBALS_AF_NETWORK_LIST:
+    - afi_safi: ""
+      backdoor: ""
+      ip_prefix: ""
+      policy: ""
+      vrf_name: ""
+sonic-bgp-internal-neighbor:
+  BGP_INTERNAL_NEIGHBOR:
+    BGP_INTERNAL_NEIGHBOR_LIST:
+    - admin_status: ""
+      asn: ""
+      holdtime: ""
+      keepalive: ""
+      local_addr: ""
+      name: ""
+      neighbor: ""
+      nhopself: ""
+      rrclient: ""
+sonic-bgp-monitor:
+  BGP_MONITORS:
+    BGP_MONITORS_LIST:
+    - addr: ""
+      admin_status: ""
+      asn: ""
+      holdtime: ""
+      keepalive: ""
+      local_addr: ""
+      name: ""
+      nhopself: ""
+      rrclient: ""
+sonic-bgp-neighbor:
+  BGP_NEIGHBOR:
+    BGP_NEIGHBOR_LIST:
+    - admin_status: ""
+      asn: ""
+      auth_password: ""
+      bfd: ""
+      bfd_check_ctrl_plane_failure: ""
+      capability_dynamic: ""
+      capability_ext_nexthop: ""
+      conn_retry: ""
+      disable_ebgp_connected_route_check: ""
+      dont_negotiate_capability: ""
+      ebgp_multihop: ""
+      ebgp_multihop_ttl: ""
+      enforce_first_as: ""
+      enforce_multihop: ""
+      holdtime: ""
+      keepalive: ""
+      local_addr: ""
+      local_as_no_prepend: ""
+      local_as_replace_as: ""
+      local_asn: ""
+      min_adv_interval: ""
+      name: ""
+      neighbor: ""
+      override_capability: ""
+      passive_mode: ""
+      peer_group_name: ""
+      peer_port: ""
+      peer_type: ""
+      shutdown_message: ""
+      solo_peer: ""
+      strict_capability_match: ""
+      ttl_security_hops: ""
+      vrf_name: ""
+    BGP_NEIGHBOR_TEMPLATE_LIST:
+    - admin_status: ""
+      asn: ""
+      holdtime: ""
+      keepalive: ""
+      local_addr: ""
+      name: ""
+      neighbor: ""
+      nhopself: ""
+      rrclient: ""
+  BGP_NEIGHBOR_AF:
+    BGP_NEIGHBOR_AF_LIST:
+    - admin_status: ""
+      afi_safi: ""
+      allow_as_count: ""
+      allow_as_in: ""
+      allow_as_origin: ""
+      as_override: ""
+      cap_orf: ""
+      default_rmap: ""
+      filter_list_in: ""
+      filter_list_out: ""
+      max_prefix_limit: ""
+      max_prefix_restart_interval: ""
+      max_prefix_warning_only: ""
+      max_prefix_warning_threshold: ""
+      neighbor: ""
+      nexthop_self_force: ""
+      nhself: ""
+      prefix_list_in: ""
+      prefix_list_out: ""
+      remove_private_as_all: ""
+      remove_private_as_enabled: ""
+      replace_private_as: ""
+      route_map_in: []
+      route_map_out: []
+      route_server_client: ""
+      rrclient: ""
+      send_community: ""
+      send_default_route: ""
+      soft_reconfiguration_in: ""
+      tx_add_paths: ""
+      unchanged_as_path: ""
+      unchanged_med: ""
+      unchanged_nexthop: ""
+      unsuppress_map_name: ""
+      vrf_name: ""
+      weight: ""
+sonic-bgp-peergroup:
+  BGP_GLOBALS_LISTEN_PREFIX:
+    BGP_GLOBALS_LISTEN_PREFIX_LIST:
+    - ip_prefix: ""
+      peer_group: ""
+      vrf_name: ""
+  BGP_PEER_GROUP:
+    BGP_PEER_GROUP_LIST:
+    - admin_status: ""
+      asn: ""
+      auth_password: ""
+      bfd: ""
+      bfd_check_ctrl_plane_failure: ""
+      capability_dynamic: ""
+      capability_ext_nexthop: ""
+      conn_retry: ""
+      disable_ebgp_connected_route_check: ""
+      dont_negotiate_capability: ""
+      ebgp_multihop: ""
+      ebgp_multihop_ttl: ""
+      enforce_first_as: ""
+      enforce_multihop: ""
+      holdtime: ""
+      keepalive: ""
+      local_addr: ""
+      local_as_no_prepend: ""
+      local_as_replace_as: ""
+      local_asn: ""
+      min_adv_interval: ""
+      name: ""
+      override_capability: ""
+      passive_mode: ""
+      peer_group_name: ""
+      peer_port: ""
+      peer_type: ""
+      shutdown_message: ""
+      solo_peer: ""
+      strict_capability_match: ""
+      ttl_security_hops: ""
+      vrf_name: ""
+  BGP_PEER_GROUP_AF:
+    BGP_PEER_GROUP_AF_LIST:
+    - admin_status: ""
+      afi_safi: ""
+      allow_as_count: ""
+      allow_as_in: ""
+      allow_as_origin: ""
+      as_override: ""
+      cap_orf: ""
+      default_rmap: ""
+      filter_list_in: ""
+      filter_list_out: ""
+      max_prefix_limit: ""
+      max_prefix_restart_interval: ""
+      max_prefix_warning_only: ""
+      max_prefix_warning_threshold: ""
+      nexthop_self_force: ""
+      nhself: ""
+      peer_group_name: ""
+      prefix_list_in: ""
+      prefix_list_out: ""
+      remove_private_as_all: ""
+      remove_private_as_enabled: ""
+      replace_private_as: ""
+      route_map_in: []
+      route_map_out: []
+      route_server_client: ""
+      rrclient: ""
+      send_community: ""
+      send_default_route: ""
+      soft_reconfiguration_in: ""
+      tx_add_paths: ""
+      unchanged_as_path: ""
+      unchanged_med: ""
+      unchanged_nexthop: ""
+      unsuppress_map_name: ""
+      vrf_name: ""
+      weight: ""
+sonic-bgp-peerrange:
+  BGP_PEER_RANGE:
+    BGP_PEER_RANGE_LIST:
+    - ip_range: []
+      name: ""
+      peer_asn: ""
+      peer_range_name: ""
+      src_address: ""
+sonic-bgp-sentinel:
+  BGP_SENTINELS:
+    BGP_SENTINELS_LIST:
+    - ip_range: []
+      name: ""
+      sentinel_name: ""
+      src_address: ""
+sonic-bgp-voq-chassis-neighbor:
+  BGP_VOQ_CHASSIS_NEIGHBOR:
+    BGP_VOQ_CHASSIS_NEIGHBOR_LIST:
+    - admin_status: ""
+      asn: ""
+      holdtime: ""
+      keepalive: ""
+      local_addr: ""
+      name: ""
+      neighbor: ""
+      nhopself: ""
+      rrclient: ""
+sonic-bmp:
+  BMP:
+    table:
+      bgp_neighbor_table: "true"
+      bgp_rib_in_table: "false"
+      bgp_rib_out_table: "false"
+sonic-breakout_cfg:
+  BREAKOUT_CFG:
+    BREAKOUT_CFG_LIST:
+    - brkout_mode: ""
+      port: ""
+sonic-buffer-pg:
+  BUFFER_PG:
+    BUFFER_PG_LIST:
+    - pg_num: ""
+      port: ""
+      profile: "0"
+sonic-buffer-pool:
+  BUFFER_POOL:
+    BUFFER_POOL_LIST:
+    - mode: ""
+      name: ""
+      size: ""
+      type: ""
+      xoff: "0"
+sonic-buffer-port-egress-profile-list:
+  BUFFER_PORT_EGRESS_PROFILE_LIST:
+    BUFFER_PORT_EGRESS_PROFILE_LIST_LIST:
+    - port: ""
+      profile_list: []
+sonic-buffer-port-ingress-profile-list:
+  BUFFER_PORT_INGRESS_PROFILE_LIST:
+    BUFFER_PORT_INGRESS_PROFILE_LIST_LIST:
+    - port: ""
+      profile_list: []
+sonic-buffer-profile:
+  BUFFER_PROFILE:
+    BUFFER_PROFILE_LIST:
+    - dynamic_th: ""
+      headroom_type: static
+      name: ""
+      pool: ""
+      size: ""
+      static_th: ""
+      xoff: "0"
+      xon: "0"
+      xon_offset: "0"
+sonic-buffer-queue:
+  BUFFER_QUEUE:
+    BUFFER_QUEUE_LIST:
+    - port: ""
+      profile: "0"
+      qindex: ""
+    VOQ_BUFFER_QUEUE_LIST:
+    - asic_name: ""
+      hostname: ""
+      port: ""
+      profile: "0"
+      qindex: ""
+sonic-cable-length:
+  CABLE_LENGTH:
+    CABLE_LENGTH_LIST:
+    - CABLE_LENGTH:
+      - length: ""
+        port: ""
+      name: ""
+sonic-chassis-module:
+  CHASSIS_MODULE:
+    CHASSIS_MODULE_LIST:
+    - admin_status: up
+      name: ""
+sonic-console:
+  CONSOLE_PORT:
+    CONSOLE_PORT_LIST:
+    - baud_rate: ""
+      flow_control: "0"
+      name: ""
+      remote_device: ""
+  CONSOLE_SWITCH:
+    console_mgmt:
+      enabled: "no"
+sonic-copp:
+  COPP_GROUP:
+    COPP_GROUP_LIST:
+    - cbs: "0"
+      cir: "0"
+      color: ""
+      green_action: forward
+      meter_type: ""
+      mode: ""
+      name: ""
+      pbs: ""
+      pir: ""
+      queue: "0"
+      red_action: forward
+      trap_action: ""
+      trap_priority: "0"
+      yellow_action: forward
+  COPP_TRAP:
+    COPP_TRAP_LIST:
+    - always_enabled: ""
+      name: ""
+      trap_group: ""
+      trap_ids: ""
+sonic-crm:
+  CRM:
+    Config:
+      acl_counter_high_threshold: ""
+      acl_counter_low_threshold: ""
+      acl_counter_threshold_type: ""
+      acl_entry_high_threshold: ""
+      acl_entry_low_threshold: ""
+      acl_entry_threshold_type: ""
+      acl_group_high_threshold: ""
+      acl_group_low_threshold: ""
+      acl_group_threshold_type: ""
+      acl_table_high_threshold: ""
+      acl_table_low_threshold: ""
+      acl_table_threshold_type: ""
+      dash_eni_ether_address_map_high_threshold: ""
+      dash_eni_ether_address_map_low_threshold: ""
+      dash_eni_ether_address_map_threshold_type: ""
+      dash_eni_high_threshold: ""
+      dash_eni_low_threshold: ""
+      dash_eni_threshold_type: ""
+      dash_ipv4_acl_group_high_threshold: ""
+      dash_ipv4_acl_group_low_threshold: ""
+      dash_ipv4_acl_group_threshold_type: ""
+      dash_ipv4_acl_rule_high_threshold: ""
+      dash_ipv4_acl_rule_low_threshold: ""
+      dash_ipv4_acl_rule_threshold_type: ""
+      dash_ipv4_inbound_routing_high_threshold: ""
+      dash_ipv4_inbound_routing_low_threshold: ""
+      dash_ipv4_inbound_routing_threshold_type: ""
+      dash_ipv4_outbound_ca_to_pa_high_threshold: ""
+      dash_ipv4_outbound_ca_to_pa_low_threshold: ""
+      dash_ipv4_outbound_ca_to_pa_threshold_type: ""
+      dash_ipv4_outbound_routing_high_threshold: ""
+      dash_ipv4_outbound_routing_low_threshold: ""
+      dash_ipv4_outbound_routing_threshold_type: ""
+      dash_ipv4_pa_validation_high_threshold: ""
+      dash_ipv4_pa_validation_low_threshold: ""
+      dash_ipv4_pa_validation_threshold_type: ""
+      dash_ipv6_acl_group_high_threshold: ""
+      dash_ipv6_acl_group_low_threshold: ""
+      dash_ipv6_acl_group_threshold_type: ""
+      dash_ipv6_acl_rule_high_threshold: ""
+      dash_ipv6_acl_rule_low_threshold: ""
+      dash_ipv6_acl_rule_threshold_type: ""
+      dash_ipv6_inbound_routing_high_threshold: ""
+      dash_ipv6_inbound_routing_low_threshold: ""
+      dash_ipv6_inbound_routing_threshold_type: ""
+      dash_ipv6_outbound_ca_to_pa_high_threshold: ""
+      dash_ipv6_outbound_ca_to_pa_low_threshold: ""
+      dash_ipv6_outbound_ca_to_pa_threshold_type: ""
+      dash_ipv6_outbound_routing_high_threshold: ""
+      dash_ipv6_outbound_routing_low_threshold: ""
+      dash_ipv6_outbound_routing_threshold_type: ""
+      dash_ipv6_pa_validation_high_threshold: ""
+      dash_ipv6_pa_validation_low_threshold: ""
+      dash_ipv6_pa_validation_threshold_type: ""
+      dash_vnet_high_threshold: ""
+      dash_vnet_low_threshold: ""
+      dash_vnet_threshold_type: ""
+      dnat_entry_high_threshold: ""
+      dnat_entry_low_threshold: ""
+      dnat_entry_threshold_type: ""
+      fdb_entry_high_threshold: ""
+      fdb_entry_low_threshold: ""
+      fdb_entry_threshold_type: ""
+      ipmc_entry_high_threshold: ""
+      ipmc_entry_low_threshold: ""
+      ipmc_entry_threshold_type: ""
+      ipv4_neighbor_high_threshold: ""
+      ipv4_neighbor_low_threshold: ""
+      ipv4_neighbor_threshold_type: ""
+      ipv4_nexthop_high_threshold: ""
+      ipv4_nexthop_low_threshold: ""
+      ipv4_nexthop_threshold_type: ""
+      ipv4_route_high_threshold: ""
+      ipv4_route_low_threshold: ""
+      ipv4_route_threshold_type: ""
+      ipv6_neighbor_high_threshold: ""
+      ipv6_neighbor_low_threshold: ""
+      ipv6_neighbor_threshold_type: ""
+      ipv6_nexthop_high_threshold: ""
+      ipv6_nexthop_low_threshold: ""
+      ipv6_nexthop_threshold_type: ""
+      ipv6_route_high_threshold: ""
+      ipv6_route_low_threshold: ""
+      ipv6_route_threshold_type: ""
+      mpls_inseg_high_threshold: ""
+      mpls_inseg_low_threshold: ""
+      mpls_inseg_threshold_type: ""
+      mpls_nexthop_high_threshold: ""
+      mpls_nexthop_low_threshold: ""
+      mpls_nexthop_threshold_type: ""
+      nexthop_group_high_threshold: ""
+      nexthop_group_low_threshold: ""
+      nexthop_group_member_high_threshold: ""
+      nexthop_group_member_low_threshold: ""
+      nexthop_group_member_threshold_type: ""
+      nexthop_group_threshold_type: ""
+      polling_interval: ""
+      snat_entry_high_threshold: ""
+      snat_entry_low_threshold: ""
+      snat_entry_threshold_type: ""
+      srv6_my_sid_entry_high_threshold: ""
+      srv6_my_sid_entry_low_threshold: ""
+      srv6_my_sid_entry_threshold_type: ""
+      srv6_nexthop_high_threshold: ""
+      srv6_nexthop_low_threshold: ""
+      srv6_nexthop_threshold_type: ""
+sonic-dash:
+  DASH_ACL_GROUP:
+    DASH_ACL_GROUP_LIST:
+    - guid: ""
+      ip_version: ""
+      name: ""
+  DASH_ACL_IN:
+    DASH_ACL_IN_LIST:
+    - acl_group_id: ""
+      eni: ""
+      stage: ""
+  DASH_ACL_OUT:
+    DASH_ACL_OUT_LIST:
+    - acl_group_id: ""
+      eni: ""
+      stage: ""
+  DASH_ACL_RULE:
+    DASH_ACL_RULE_LIST:
+    - acl_group_id: ""
+      action: ""
+      dst_addr: []
+      dst_port: []
+      ip_protocol: []
+      name: ""
+      priority: ""
+      src_addr: []
+      src_port: []
+      terminating: "false"
+  DASH_APPLIANCE:
+    DASH_APPLIANCE_LIST:
+    - name: ""
+      sip: ""
+      vni: ""
+  DASH_ENI:
+    DASH_ENI_LIST:
+    - eni_id: ""
+      mac_address: ""
+      name: ""
+      qos: ""
+      vnet: ""
+  DASH_QOS:
+    DASH_QOS_LIST:
+    - bw: ""
+      cps: ""
+      flows: ""
+      name: ""
+  DASH_ROUTE_TABLE:
+    DASH_ROUTE_TABLE_LIST:
+    - action_type: ""
+      appliance: ""
+      eni: ""
+      overlay_dip: ""
+      overlay_ip: ""
+      overlay_sip: ""
+      prefix: ""
+      underlay_dip: ""
+      underlay_sip: ""
+      vnet: ""
+  DASH_ROUTING_TYPE:
+    DASH_ROUTING_TYPE_LIST:
+    - action_name: ""
+      action_type: ""
+      encap_type: ""
+      name: ""
+      vni: ""
+  DASH_VNET:
+    DASH_VNET_LIST:
+    - address_spaces: []
+      guid: ""
+      name: ""
+      vni: ""
+  DASH_VNET_MAPPING_TABLE:
+    DASH_VNET_MAPPING_TABLE_LIST:
+    - ip_addr: ""
+      mac_address: ""
+      routing_type: ""
+      underlay_ip: ""
+      use_dst_vni: "false"
+      vnet: ""
+sonic-default-lossless-buffer-parameter:
+  DEFAULT_LOSSLESS_BUFFER_PARAMETER:
+    DEFAULT_LOSSLESS_BUFFER_PARAMETER_LIST:
+    - default_dynamic_th: ""
+      name: ""
+      over_subscribe_ratio: ""
+sonic-device_metadata:
+  DEVICE_METADATA:
+    localhost:
+      asic_id: ""
+      asic_name: ""
+      bgp_adv_lo_prefix_as_128: ""
+      bgp_asn: ""
+      bgp_router_id: ""
+      buffer_model: ""
+      chassis_hostname: ""
+      cloudtype: ""
+      cluster: ""
+      create_only_config_db_buffers: ""
+      default_bgp_status: up
+      default_pfcwd_status: disable
+      deployment_id: ""
+      dhcp_server: ""
+      docker_routing_config_mode: unified
+      downstream_subrole: ""
+      frr_mgmt_framework_config: "false"
+      hostname: ""
+      hwsku: ""
+      mac: ""
+      max_cores: ""
+      peer_switch: ""
+      platform: ""
+      rack_mgmt_map: ""
+      region: ""
+      resource_type: ""
+      slice_type: ""
+      storage_device: ""
+      sub_role: ""
+      subtype: ""
+      suppress-fib-pending: disabled
+      switch_id: ""
+      switch_type: ""
+      synchronous_mode: enable
+      timezone: UTC
+      type: ""
+      yang_config_validation: disable
+sonic-device_neighbor:
+  DEVICE_NEIGHBOR:
+    DEVICE_NEIGHBOR_LIST:
+    - local_port: ""
+      mgmt_addr: ""
+      name: ""
+      peer_name: ""
+      port: ""
+      type: ""
+sonic-device_neighbor_metadata:
+  DEVICE_NEIGHBOR_METADATA:
+    DEVICE_NEIGHBOR_METADATA_LIST:
+    - cluster: ""
+      deployment_id: ""
+      hwsku: ""
+      lo_addr: ""
+      lo_addr_v6: ""
+      mgmt_addr: ""
+      mgmt_addr_v6: ""
+      name: ""
+      type: ""
+sonic-dhcp-server:
+  DHCP_SERVER:
+    DHCP_SERVER_LIST:
+    - ip: ""
+sonic-dhcp-server-ipv4:
+  DHCP_SERVER_IPV4:
+    DHCP_SERVER_IPV4_LIST:
+    - customized_options: []
+      gateway: ""
+      lease_time: ""
+      mode: ""
+      name: ""
+      netmask: ""
+      state: ""
+  DHCP_SERVER_IPV4_CUSTOMIZED_OPTIONS:
+    DHCP_SERVER_IPV4_CUSTOMIZED_OPTIONS_LIST:
+    - id: ""
+      name: ""
+      type: ""
+      value: ""
+  DHCP_SERVER_IPV4_PORT:
+    DHCP_SERVER_IPV4_PORT_LIST:
+    - ips: []
+      name: ""
+      port: ""
+      ranges: []
+  DHCP_SERVER_IPV4_RANGE:
+    DHCP_SERVER_IPV4_RANGE_LIST:
+    - name: ""
+      range: []
+sonic-dhcpv6-relay:
+  DHCP_RELAY:
+    DHCP_RELAY_LIST:
+    - dhcpv6_servers: []
+      interface_id: ""
+      name: ""
+      rfc6939_support: ""
+sonic-dns:
+  DNS_NAMESERVER:
+    DNS_NAMESERVER_LIST:
+    - ip: ""
+sonic-dot1p-tc-map:
+  DOT1P_TO_TC_MAP:
+    DOT1P_TO_TC_MAP_LIST:
+    - DOT1P_TO_TC_MAP:
+      - dot1p: ""
+        tc: ""
+      name: ""
+sonic-dscp-fc-map:
+  DSCP_TO_FC_MAP:
+    DSCP_TO_FC_MAP_LIST:
+    - DSCP_TO_FC_MAP:
+      - dscp: ""
+        fc: ""
+      name: ""
+sonic-dscp-tc-map:
+  DSCP_TO_TC_MAP:
+    DSCP_TO_TC_MAP_LIST:
+    - DSCP_TO_TC_MAP:
+      - dscp: ""
+        tc: ""
+      name: ""
+sonic-events-bgp:
+  bgp-state:
+    ip: ""
+    status: ""
+    timestamp: ""
+  notification:
+    ip: ""
+    is_sent: ""
+    major_code: ""
+    minor_code: ""
+    timestamp: ""
+  zebra-no-buff:
+    timestamp: ""
+sonic-events-dhcp-relay:
+  dhcp-relay-bind-failure:
+    timestamp: ""
+    type: ""
+    vlan: ""
+  dhcp-relay-discard:
+    ifname: ""
+    timestamp: ""
+  dhcp-relay-disparity:
+    duration: ""
+    timestamp: ""
+    vlan: ""
+sonic-events-host:
+  cpu-usage:
+    limit: ""
+    timestamp: ""
+    usage: ""
+  disk-usage:
+    fs: ""
+    limit: ""
+    timestamp: ""
+    usage: ""
+  event-disk:
+    fail_type: ""
+    timestamp: ""
+  event-down-ctr:
+    ctr_name: ""
+    timestamp: ""
+  event-kernel:
+    fail_type: ""
+    timestamp: ""
+  event-seu:
+    timestamp: ""
+  event-sshd:
+    timestamp: ""
+    username: ""
+  event-stopped-ctr:
+    ctr_name: ""
+    timestamp: ""
+  invalid-freelist:
+    timestamp: ""
+  mem-threshold-exceeded:
+    ctr_name: ""
+    mem_usage: ""
+    threshold: ""
+    timestamp: ""
+  memory-usage:
+    limit: ""
+    timestamp: ""
+    usage: ""
+  process-exited-unexpectedly:
+    ctr_name: ""
+    process_name: ""
+    timestamp: ""
+  process-not-running:
+    ctr_name: ""
+    process_name: ""
+    timestamp: ""
+  watchdog-timeout:
+    limit: ""
+    timestamp: ""
+sonic-events-swss:
+  asic-sdk-health-event:
+    asic_name: ""
+    category: ""
+    description: ""
+    sai_timestamp: ""
+    severity: ""
+    timestamp: ""
+  chk_crm_threshold:
+    free_cnt: ""
+    percent: ""
+    timestamp: ""
+    used_cnt: ""
+  if-state:
+    ifname: ""
+    status: ""
+    timestamp: ""
+  pfc-storm:
+    additional_info: ""
+    ifname: ""
+    port_id: ""
+    queue_id: ""
+    queue_index: ""
+    timestamp: ""
+  select-operation-failure:
+    command: ""
+    operation_result: ""
+    timestamp: ""
+sonic-events-syncd:
+  alpm-parity-error:
+    ip_family: ""
+    operation: ""
+    timestamp: ""
+  syncd-failure:
+    fail_type: ""
+    timestamp: ""
+sonic-exp-fc-map:
+  EXP_TO_FC_MAP:
+    EXP_TO_FC_MAP_LIST:
+    - EXP_TO_FC_MAP:
+      - exp: ""
+        fc: ""
+      name: ""
+sonic-fabric-monitor:
+  FABRIC_MONITOR:
+    FABRIC_MONITOR_DATA:
+      monErrThreshCrcCells: "1"
+      monErrThreshRxCells: "61035156"
+      monPollThreshIsolation: "1"
+      monPollThreshRecovery: "8"
+sonic-fabric-port:
+  FABRIC_PORT:
+    FABRIC_PORT_LIST:
+    - alias: ""
+      isolateStatus: "False"
+      lanes: ""
+      name: ""
+sonic-feature:
+  FEATURE:
+    FEATURE_LIST:
+    - auto_restart: enabled
+      check_up_status: "false"
+      delayed: "false"
+      has_global_scope: "false"
+      has_per_asic_scope: "false"
+      has_per_dpu_scope: "false"
+      high_mem_alert: disabled
+      name: ""
+      set_owner: local
+      state: enabled
+      support_syslog_rate_limit: "false"
+sonic-fine-grained-ecmp:
+  FG_NHG:
+    FG_NHG_LIST:
+    - bucket_size: ""
+      match_mode: ""
+      name: ""
+  FG_NHG_MEMBER:
+    FG_NHG_MEMBER_LIST:
+    - FG_NHG: ""
+      bank: ""
+      link: ""
+      next_hop_ip: ""
+  FG_NHG_PREFIX:
+    FG_NHG_PREFIX_LIST:
+    - FG_NHG: ""
+      ip_prefix: ""
+sonic-fips:
+  FIPS:
+    global:
+      enable: "false"
+      enforce: "false"
+sonic-flex_counter:
+  FLEX_COUNTER_TABLE:
+    ACL:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    BUFFER_POOL_WATERMARK:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    DEBUG_COUNTER:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+    FLOW_CNT_ROUTE:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    FLOW_CNT_TRAP:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    PFCWD:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+    PG_DROP:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    PG_WATERMARK:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    PORT:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    PORT_BUFFER_DROP:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    PORT_RATES:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+    QUEUE:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    QUEUE_WATERMARK:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    RIF:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    RIF_RATES:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+    TUNNEL:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    WRED_ECN_PORT:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+    WRED_ECN_QUEUE:
+      FLEX_COUNTER_DELAY_STATUS: ""
+      FLEX_COUNTER_STATUS: ""
+      POLL_INTERVAL: ""
+  FLOW_COUNTER_ROUTE_PATTERN:
+    FLOW_COUNTER_ROUTE_PATTERN_LIST:
+    - ip_prefix: ""
+      max_match_count: ""
+    FLOW_COUNTER_ROUTE_PATTERN_VRF_LIST:
+    - ip_prefix: ""
+      max_match_count: ""
+      vrf_name: ""
+sonic-gnmi:
+  GNMI:
+    certs:
+      ca_crt: ""
+      server_crt: ""
+      server_key: ""
+    gnmi:
+      client_auth: ""
+      log_level: ""
+      port: ""
+sonic-hash:
+  SWITCH_HASH:
+    GLOBAL:
+      ecmp_hash: []
+      ecmp_hash_algorithm: ""
+      lag_hash: []
+      lag_hash_algorithm: ""
+sonic-interface:
+  INTERFACE:
+    INTERFACE_IPPREFIX_LIST:
+    - family: ""
+      ip-prefix: ""
+      name: ""
+      scope: ""
+    INTERFACE_LIST:
+    - ipv6_use_link_local_only: disable
+      loopback_action: ""
+      mpls: ""
+      name: ""
+      nat_zone: "0"
+      vrf_name: ""
+sonic-kdump:
+  KDUMP:
+    config:
+      enabled: ""
+      memory: ""
+      num_dumps: ""
+sonic-kubernetes_master:
+  KUBERNETES_MASTER:
+    SERVER:
+      disable: "false"
+      insecure: "true"
+      ip: ""
+      port: "6443"
+sonic-lldp:
+  LLDP:
+    GLOBAL:
+      enabled: "true"
+      hello_time: "30"
+      mode: ""
+      multiplier: "4"
+      supp_mgmt_address_tlv: "false"
+      supp_system_capabilities_tlv: "false"
+      system_description: ""
+      system_name: ""
+  LLDP_PORT:
+    LLDP_PORT_LIST:
+    - enabled: "true"
+      ifname: ""
+      mode: ""
+sonic-logger:
+  LOGGER:
+    LOGGER_LIST:
+    - LOGLEVEL: ""
+      LOGOUTPUT: SYSLOG
+      name: ""
+sonic-loopback-interface:
+  LOOPBACK_INTERFACE:
+    LOOPBACK_INTERFACE_IPPREFIX_LIST:
+    - family: ""
+      ip-prefix: ""
+      name: ""
+      scope: ""
+    LOOPBACK_INTERFACE_LIST:
+    - name: ""
+      nat_zone: "0"
+      vrf_name: ""
+sonic-lossless-traffic-pattern:
+  LOSSLESS_TRAFFIC_PATTERN:
+    LOSSLESS_TRAFFIC_PATTERN_LIST:
+    - mtu: ""
+      name: ""
+      small_packet_percentage: ""
+sonic-macsec:
+  MACSEC_PROFILE:
+    MACSEC_PROFILE_LIST:
+    - cipher_suite: GCM-AES-128
+      enable_replay_protect: "false"
+      fallback_cak: ""
+      fallback_ckn: ""
+      name: ""
+      policy: security
+      primary_cak: ""
+      primary_ckn: ""
+      priority: "255"
+      rekey_period: "0"
+      replay_window: ""
+      send_sci: "true"
+sonic-mclag:
+  MCLAG_DOMAIN:
+    MCLAG_DOMAIN_LIST:
+    - domain_id: ""
+      keepalive_interval: "1"
+      peer_ip: ""
+      peer_link: ""
+      session_timeout: "30"
+      source_ip: ""
+  MCLAG_INTERFACE:
+    MCLAG_INTERFACE_LIST:
+    - domain_id: ""
+      if_name: ""
+      if_type: ""
+  MCLAG_UNIQUE_IP:
+    MCLAG_UNIQUE_IP_LIST:
+    - if_name: ""
+      unique_ip: ""
+sonic-mgmt_interface:
+  MGMT_INTERFACE:
+    MGMT_INTERFACE_LIST:
+    - forced_mgmt_routes: []
+      gwaddr: ""
+      ip_prefix: ""
+      name: ""
+sonic-mgmt_port:
+  MGMT_PORT:
+    MGMT_PORT_LIST:
+    - admin_status: up
+      alias: ""
+      autoneg: ""
+      description: ""
+      mtu: "1500"
+      name: ""
+      speed: ""
+sonic-mgmt_vrf:
+  MGMT_VRF_CONFIG:
+    vrf_global:
+      mgmtVrfEnabled: "false"
+sonic-mirror-session:
+  MIRROR_SESSION:
+    MIRROR_SESSION_LIST:
+    - direction: BOTH
+      dscp: ""
+      dst_ip: ""
+      dst_port: ""
+      gre_type: "0x88be"
+      name: ""
+      policer: ""
+      queue: ""
+      src_ip: ""
+      src_port: ""
+      ttl: ""
+      type: ERSPAN
+sonic-mpls-tc-map:
+  MPLS_TC_TO_TC_MAP:
+    MPLS_TC_TO_TC_MAP_LIST:
+    - MPLS_TC_TO_TC_MAP:
+      - mpls: ""
+        tc: ""
+      name: ""
+sonic-mux-cable:
+  MUX_CABLE:
+    MUX_CABLE_LIST:
+    - cable_type: active-standby
+      ifname: ""
+      server_ipv4: ""
+      server_ipv6: ""
+      soc_ipv4: ""
+      soc_ipv6: ""
+      state: auto
+sonic-mux-linkmgr:
+  MUX_LINKMGR:
+    LINK_PROBER:
+      interval_pck_loss_count_update: ""
+      interval_v4: "100"
+      interval_v6: "1000"
+      negative_signal_count: "3"
+      positive_signal_count: "1"
+      src_mac: ""
+      suspend_timer: ""
+      use_well_known_mac: ""
+    MUXLOGGER:
+      log_verbosity: ""
+    SERVICE_MGMT:
+      kill_radv: "True"
+    TIMED_OSCILLATION:
+      interval_sec: "300"
+      oscillation_enabled: "true"
+sonic-nat:
+  NAT_BINDINGS:
+    NAT_BINDINGS_LIST:
+    - name: ""
+      nat_pool: ""
+      nat_type: snat
+      twice_nat_id: ""
+  NAT_GLOBAL:
+    Values:
+      admin_mode: disabled
+      nat_tcp_timeout: "86400"
+      nat_timeout: "600"
+      nat_udp_timeout: "300"
+  NAT_POOL:
+    NAT_POOL_LIST:
+    - name: ""
+      nat_ip: ""
+      nat_port: ""
+  STATIC_NAPT:
+    STATIC_NAPT_LIST:
+    - global_ip: ""
+      global_l4_port: ""
+      ip_protocol: ""
+      local_ip: ""
+      local_port: ""
+      nat_type: dnat
+      twice_nat_id: ""
+  STATIC_NAT:
+    STATIC_NAT_LIST:
+    - global_ip: ""
+      local_ip: ""
+      nat_type: dnat
+      twice_nat_id: ""
+sonic-neigh:
+  NEIGH:
+    NEIGH_LIST:
+    - family: ""
+      neigh: ""
+      neighbor: ""
+      vlan: ""
+sonic-ntp:
+  NTP:
+    global:
+      admin_state: enabled
+      authentication: disabled
+      dhcp: enabled
+      server_role: enabled
+      src_intf: []
+      vrf: ""
+  NTP_KEY:
+    NTP_KEYS_LIST:
+    - id: ""
+      trusted: "no"
+      type: md5
+      value: ""
+  NTP_SERVER:
+    NTP_SERVER_LIST:
+    - admin_state: enabled
+      association_type: server
+      iburst: "on"
+      key: ""
+      resolve_as: ""
+      server_address: ""
+      trusted: "no"
+      version: "4"
+sonic-nvgre-tunnel:
+  NVGRE_TUNNEL:
+    NVGRE_TUNNEL_LIST:
+    - src_ip: ""
+      tunnel_name: ""
+  NVGRE_TUNNEL_MAP:
+    NVGRE_TUNNEL_MAP_LIST:
+    - tunnel_map_name: ""
+      tunnel_name: ""
+      vlan_id: ""
+      vsid: ""
+sonic-passwh:
+  PASSW_HARDENING:
+    POLICIES:
+      digits_class: ""
+      expiration: ""
+      expiration_warning: ""
+      history_cnt: ""
+      len_min: ""
+      lower_class: ""
+      reject_user_passw_match: ""
+      special_class: ""
+      state: disabled
+      upper_class: ""
+sonic-pbh:
+  PBH_HASH:
+    PBH_HASH_LIST:
+    - hash_field_list: []
+      hash_name: ""
+  PBH_HASH_FIELD:
+    PBH_HASH_FIELD_LIST:
+    - hash_field: ""
+      hash_field_name: ""
+      ip_mask: ""
+      sequence_id: ""
+  PBH_RULE:
+    PBH_RULE_LIST:
+    - ether_type: ""
+      flow_counter: DISABLED
+      gre_key: ""
+      hash: ""
+      inner_ether_type: ""
+      ip_protocol: ""
+      ipv6_next_header: ""
+      l4_dst_port: ""
+      packet_action: SET_ECMP_HASH
+      priority: ""
+      rule_name: ""
+      table_name: ""
+  PBH_TABLE:
+    PBH_TABLE_LIST:
+    - description: ""
+      interface_list: []
+      table_name: ""
+sonic-peer-switch:
+  PEER_SWITCH:
+    PEER_SWITCH_LIST:
+    - address_ipv4: ""
+      peer_switch: ""
+sonic-pfc-priority-priority-group-map:
+  PFC_PRIORITY_TO_PRIORITY_GROUP_MAP:
+    PFC_PRIORITY_TO_PRIORITY_GROUP_MAP_LIST:
+    - PFC_PRIORITY_TO_PRIORITY_GROUP_MAP:
+      - pfc_priority: ""
+        pg: ""
+      name: ""
+sonic-pfc-priority-queue-map:
+  MAP_PFC_PRIORITY_TO_QUEUE:
+    MAP_PFC_PRIORITY_TO_QUEUE_LIST:
+    - MAP_PFC_PRIORITY_TO_QUEUE:
+      - pfc_priority: ""
+        qindex: ""
+      name: ""
+sonic-pfcwd:
+  PFC_WD:
+    PFC_WD_LIST:
+    - POLL_INTERVAL: ""
+      action: ""
+      detection_time: ""
+      ifname: ""
+      restoration_time: ""
+sonic-policer:
+  POLICER:
+    POLICER_LIST:
+    - cbs: "0"
+      cir: "0"
+      color: ""
+      green_packet_action: forward
+      meter_type: ""
+      mode: ""
+      name: ""
+      pbs: ""
+      pir: ""
+      red_packet_action: forward
+      yellow_packet_action: forward
+sonic-port:
+  PORT:
+    PORT_LIST:
+    - admin_status: down
+      adv_interface_types: []
+      adv_speeds: []
+      alias: ""
+      asic_port_name: ""
+      autoneg: ""
+      core_id: ""
+      core_port_id: ""
+      description: ""
+      dom_polling: ""
+      fec: ""
+      index: ""
+      interface_type: ""
+      lanes: ""
+      laser_freq: ""
+      link_training: ""
+      macsec: ""
+      mode: ""
+      mtu: ""
+      mux_cable: ""
+      name: ""
+      num_voq: ""
+      pfc_asym: ""
+      role: Ext
+      speed: ""
+      subport: ""
+      tpid: ""
+      tx_power: ""
+sonic-port-qos-map:
+  PORT_QOS_MAP:
+    PORT_QOS_MAP_LIST:
+    - dot1p_to_tc_map: ""
+      dscp_to_tc_map: ""
+      ifname: ""
+      pfc_enable: ""
+      pfc_to_pg_map: ""
+      pfc_to_queue_map: ""
+      pfcwd_sw_enable: ""
+      scheduler: ""
+      tc_to_pg_map: ""
+      tc_to_queue_map: ""
+sonic-portchannel:
+  PORTCHANNEL:
+    PORTCHANNEL_LIST:
+    - admin_status: ""
+      description: ""
+      fallback: ""
+      fast_rate: ""
+      lacp_key: ""
+      min_links: ""
+      mode: ""
+      mtu: ""
+      name: ""
+      tpid: ""
+  PORTCHANNEL_INTERFACE:
+    PORTCHANNEL_INTERFACE_IPPREFIX_LIST:
+    - ip_prefix: ""
+      name: ""
+    PORTCHANNEL_INTERFACE_LIST:
+    - ipv6_use_link_local_only: disable
+      loopback_action: ""
+      mpls: ""
+      name: ""
+      nat_zone: "0"
+      vrf_name: ""
+  PORTCHANNEL_MEMBER:
+    PORTCHANNEL_MEMBER_LIST:
+    - name: ""
+      port: ""
+sonic-queue:
+  QUEUE:
+    QUEUE_LIST:
+    - ifname: ""
+      qindex: ""
+      scheduler: ""
+      wred_profile: ""
+    VOQ_QUEUE_LIST:
+    - asic_name: ""
+      hostname: ""
+      ifname: ""
+      qindex: ""
+      scheduler: ""
+      wred_profile: ""
+sonic-restapi:
+  RESTAPI:
+    certs:
+      ca_crt: ""
+      client_crt_cname: ""
+      server_crt: ""
+      server_key: ""
+    config:
+      allow_insecure: "false"
+      client_auth: "true"
+      log_level: ""
+sonic-route-common:
+  ROUTE_REDISTRIBUTE:
+    ROUTE_REDISTRIBUTE_LIST:
+    - addr_family: ""
+      dst_protocol: ""
+      metric: ""
+      route_map: []
+      src_protocol: ""
+      vrf_name: ""
+sonic-route-map:
+  ROUTE_MAP:
+    ROUTE_MAP_LIST:
+    - call_route_map: ""
+      match_as_path: ""
+      match_community: ""
+      match_ext_community: ""
+      match_interface: ""
+      match_ipv6_prefix_set: ""
+      match_local_pref: ""
+      match_med: ""
+      match_neighbor: []
+      match_next_hop_set: ""
+      match_origin: ""
+      match_prefix_set: ""
+      match_protocol: ""
+      match_src_vrf: ""
+      match_tag: []
+      name: ""
+      route_operation: ""
+      set_asn: ""
+      set_asn_list: ""
+      set_community_inline: []
+      set_community_ref: ""
+      set_ext_community_inline: []
+      set_ext_community_ref: ""
+      set_ipv6_next_hop_global: ""
+      set_ipv6_next_hop_prefer_global: ""
+      set_local_pref: ""
+      set_med: ""
+      set_metric: ""
+      set_metric_action: ""
+      set_next_hop: ""
+      set_origin: ""
+      set_repeat_asn: ""
+      set_tag: ""
+      stmt_name: ""
+  ROUTE_MAP_SET:
+    ROUTE_MAP_SET_LIST:
+    - name: ""
+sonic-routing-policy-sets:
+  AS_PATH_SET:
+    AS_PATH_SET_LIST:
+    - action: ""
+      as_path_set_member: []
+      name: ""
+  COMMUNITY_SET:
+    COMMUNITY_SET_LIST:
+    - action: ""
+      community_member: []
+      match_action: ""
+      name: ""
+      set_type: ""
+  EXTENDED_COMMUNITY_SET:
+    EXTENDED_COMMUNITY_SET_LIST:
+    - action: ""
+      community_member: []
+      match_action: ""
+      name: ""
+      set_type: ""
+  PREFIX:
+    PREFIX_LIST:
+    - action: ""
+      ip_prefix: ""
+      masklength_range: ""
+      name: ""
+      sequence_number: ""
+  PREFIX_SET:
+    PREFIX_SET_LIST:
+    - mode: ""
+      name: ""
+sonic-scheduler:
+  SCHEDULER:
+    SCHEDULER_LIST:
+    - cbs: ""
+      cir: ""
+      meter_type: bytes
+      name: ""
+      pbs: ""
+      pir: ""
+      priority: ""
+      type: WRR
+      weight: "1"
+sonic-sflow:
+  SFLOW:
+    global:
+      admin_state: down
+      agent_id: ""
+      polling_interval: "20"
+      sample_direction: rx
+  SFLOW_COLLECTOR:
+    SFLOW_COLLECTOR_LIST:
+    - collector_ip: ""
+      collector_port: "6343"
+      collector_vrf: ""
+      name: ""
+  SFLOW_SESSION:
+    SFLOW_SESSION_LIST:
+    - admin_state: up
+      port: ""
+      sample_direction: rx
+      sample_rate: ""
+sonic-smart-switch:
+  DPUS:
+    DPUS_LIST:
+    - dpu_name: ""
+      midplane_interface: ""
+  MID_PLANE_BRIDGE:
+    GLOBAL:
+      bridge: ""
+      ip_prefix: ""
+sonic-snmp:
+  SNMP:
+    CONTACT:
+      Contact: ""
+    LOCATION:
+      Location: ""
+  SNMP_AGENT_ADDRESS_CONFIG:
+    SNMP_AGENT_ADDRESS_CONFIG_LIST:
+    - agent_ip: ""
+      port: ""
+      vrf_name: ""
+  SNMP_COMMUNITY:
+    SNMP_COMMUNITY_LIST:
+    - TYPE: ""
+      name: ""
+  SNMP_USER:
+    SNMP_USER_LIST:
+    - SNMP_USER_AUTH_PASSWORD: ""
+      SNMP_USER_AUTH_TYPE: ""
+      SNMP_USER_ENCRYPTION_PASSWORD: ""
+      SNMP_USER_ENCRYPTION_TYPE: ""
+      SNMP_USER_PERMISSION: ""
+      SNMP_USER_TYPE: ""
+      name: ""
+sonic-ssh-server:
+  SSH_SERVER:
+    POLICIES:
+      authentication_retries: "6"
+      login_timeout: "120"
+      ports: "22"
+sonic-static-route:
+  STATIC_ROUTE:
+    STATIC_ROUTE_LIST:
+    - blackhole: "false"
+      distance: "0"
+      ifname: ""
+      nexthop: ""
+      nexthop-vrf: ""
+      prefix: ""
+      vrf_name: ""
+    STATIC_ROUTE_TEMPLATE_LIST:
+    - advertise: "false"
+      bfd: "false"
+      ifname: ""
+      nexthop: ""
+      prefix: ""
+sonic-storm-control:
+  PORT_STORM_CONTROL:
+    PORT_STORM_CONTROL_LIST:
+    - ifname: ""
+      kbps: ""
+      storm_type: ""
+sonic-stormond-config:
+  STORMOND_CONFIG:
+    INTERVALS:
+      daemon_polling_interval: "3600"
+      fsstats_sync_interval: "86400"
+sonic-suppress-asic-sdk-health-event:
+  SUPPRESS_ASIC_SDK_HEALTH_EVENT:
+    SUPPRESS_ASIC_SDK_HEALTH_EVENT_LIST:
+    - categories: []
+      max_events: ""
+      severity: ""
+sonic-syslog:
+  SYSLOG_CONFIG:
+    GLOBAL:
+      format: standard
+      rate_limit_burst: ""
+      rate_limit_interval: ""
+      severity: notice
+      welf_firewall_name: ""
+  SYSLOG_CONFIG_FEATURE:
+    SYSLOG_CONFIG_FEATURE_LIST:
+    - rate_limit_burst: ""
+      rate_limit_interval: ""
+      service: ""
+  SYSLOG_SERVER:
+    SYSLOG_SERVER_LIST:
+    - filter: ""
+      filter_regex: ""
+      port: ""
+      protocol: ""
+      server_address: ""
+      severity: ""
+      source: ""
+      vrf: ""
+sonic-system-aaa:
+  AAA:
+    AAA_LIST:
+    - debug: "False"
+      failthrough: "False"
+      fallback: "False"
+      login: local
+      trace: "False"
+      type: ""
+sonic-system-defaults:
+  SYSTEM_DEFAULTS:
+    SYSTEM_DEFAULTS_LIST:
+    - name: ""
+      status: ""
+sonic-system-ldap:
+  LDAP:
+    global:
+      base_dn: ""
+      bind_dn: ""
+      bind_password: ""
+      bind_timeout: "5"
+      port: "389"
+      timeout: ""
+      version: "3"
+  LDAP_SERVER:
+    LDAP_SERVER_LIST:
+    - hostname: ""
+      priority: "1"
+sonic-system-port:
+  SYSTEM_PORT:
+    SYSTEM_PORT_LIST:
+    - asic_name: ""
+      core_index: ""
+      core_port_index: ""
+      hostname: ""
+      ifname: ""
+      num_voq: ""
+      speed: ""
+      switch_id: ""
+      system_port_id: ""
+sonic-system-radius:
+  RADIUS:
+    global:
+      auth_type: pap
+      nas_ip: ""
+      passkey: ""
+      retransmit: "3"
+      src_ip: ""
+      statistics: ""
+      timeout: "5"
+  RADIUS_SERVER:
+    RADIUS_SERVER_LIST:
+    - auth_port: "1812"
+      auth_type: pap
+      ipaddress: ""
+      passkey: ""
+      priority: ""
+      retransmit: "3"
+      src_intf: ""
+      timeout: "5"
+      vrf: ""
+sonic-system-tacacs:
+  TACPLUS:
+    global:
+      auth_type: pap
+      passkey: ""
+      src_intf: ""
+      timeout: "5"
+  TACPLUS_SERVER:
+    TACPLUS_SERVER_LIST:
+    - auth_type: pap
+      ipaddress: ""
+      passkey: ""
+      priority: "1"
+      tcp_port: "49"
+      timeout: "5"
+      vrf: ""
+sonic-tc-priority-group-map:
+  TC_TO_PRIORITY_GROUP_MAP:
+    TC_TO_PRIORITY_GROUP_MAP_LIST:
+    - TC_TO_PRIORITY_GROUP_MAP:
+      - pg: ""
+        tc: ""
+      name: ""
+sonic-tc-queue-map:
+  TC_TO_QUEUE_MAP:
+    TC_TO_QUEUE_MAP_LIST:
+    - TC_TO_QUEUE_MAP:
+      - qindex: ""
+        tc: ""
+      name: ""
+sonic-telemetry:
+  TELEMETRY:
+    certs:
+      ca_crt: ""
+      server_crt: ""
+      server_key: ""
+    gnmi:
+      client_auth: ""
+      log_level: ""
+      port: ""
+sonic-telemetry_client:
+  TELEMETRY_CLIENT:
+    Global:
+      encoding: ""
+      retry_interval: ""
+      src_ip: ""
+      unidirectional: "true"
+    TELEMETRY_CLIENT_LIST:
+    - dst_addr: ""
+      dst_group: ""
+      name: ""
+      path_target: ""
+      paths: ""
+      prefix: ""
+      report_interval: "5000"
+      report_type: ""
+sonic-tunnel:
+  TUNNEL:
+    TUNNEL_LIST:
+    - decap_dscp_to_tc_map: ""
+      decap_tc_to_pg_map: ""
+      dscp_mode: ""
+      dst_ip: ""
+      ecn_mode: ""
+      encap_ecn_mode: ""
+      encap_tc_to_dscp_map: ""
+      encap_tc_to_queue_map: ""
+      mux_tunnel: ""
+      src_ip: ""
+      ttl_mode: ""
+      tunnel_type: ""
+sonic-versions:
+  VERSIONS:
+    DATABASE:
+      VERSION: ""
+sonic-vlan:
+  VLAN:
+    VLAN_LIST:
+    - admin_status: ""
+      alias: ""
+      description: ""
+      dhcp_servers: []
+      dhcpv6_servers: []
+      mac: ""
+      mtu: ""
+      name: ""
+      vlanid: ""
+  VLAN_INTERFACE:
+    VLAN_INTERFACE_IPPREFIX_LIST:
+    - family: ""
+      ip-prefix: ""
+      name: ""
+      scope: ""
+      secondary: ""
+    VLAN_INTERFACE_LIST:
+    - grat_arp: ""
+      ipv6_use_link_local_only: disable
+      loopback_action: ""
+      mpls: ""
+      name: ""
+      nat_zone: "0"
+      proxy_arp: ""
+      vrf_name: ""
+  VLAN_MEMBER:
+    VLAN_MEMBER_LIST:
+    - name: ""
+      port: ""
+      tagging_mode: ""
+sonic-vlan-sub-interface:
+  VLAN_SUB_INTERFACE:
+    VLAN_SUB_INTERFACE_IPPREFIX_LIST:
+    - ip-prefix: ""
+      name: ""
+    VLAN_SUB_INTERFACE_LIST:
+    - admin_status: ""
+      loopback_action: ""
+      name: ""
+      vlan: ""
+      vrf_name: ""
+sonic-vnet:
+  VNET:
+    VNET_LIST:
+    - advertise_prefix: ""
+      guid: ""
+      name: ""
+      overlay_dmac: ""
+      peer_list: ""
+      scope: ""
+      src_mac: ""
+      vni: ""
+      vxlan_tunnel: ""
+sonic-voq-inband-interface:
+  VOQ_INBAND_INTERFACE:
+    VOQ_INBAND_INTERFACE_IPPREFIX_LIST:
+    - ip-prefix: ""
+      name: ""
+    VOQ_INBAND_INTERFACE_LIST:
+    - inband_type: port
+      name: ""
+sonic-vrf:
+  VRF:
+    VRF_LIST:
+    - fallback: "false"
+      name: ""
+      vni: "0"
+sonic-vxlan:
+  VXLAN_EVPN_NVO:
+    VXLAN_EVPN_NVO_LIST:
+    - name: ""
+      source_vtep: ""
+  VXLAN_TUNNEL:
+    VXLAN_TUNNEL_LIST:
+    - dst_ip: ""
+      name: ""
+      src_ip: ""
+  VXLAN_TUNNEL_MAP:
+    VXLAN_TUNNEL_MAP_LIST:
+    - mapname: ""
+      name: ""
+      vlan: ""
+      vni: ""
+sonic-warm-restart:
+  WARM_RESTART:
+    WARM_RESTART_LIST:
+    - bgp_eoiu: ""
+      bgp_timer: ""
+      module: ""
+      neighsyncd_timer: ""
+      teamsyncd_timer: ""
+sonic-wred-profile:
+  WRED_PROFILE:
+    WRED_PROFILE_LIST:
+    - ecn: ecn_none
+      green_drop_probability: "100"
+      green_max_threshold: ""
+      green_min_threshold: ""
+      name: ""
+      red_drop_probability: "100"
+      red_max_threshold: ""
+      red_min_threshold: ""
+      wred_green_enable: "false"
+      wred_red_enable: "false"
+      wred_yellow_enable: "false"
+      yellow_drop_probability: "100"
+      yellow_max_threshold: ""
+      yellow_min_threshold: ""
